@@ -6,6 +6,6 @@ export interface ChatMessage {
 
 export interface Chat {
   id: string;
-  tittle: string;
+  title: string;
   messages: ChatMessage[];
 }
