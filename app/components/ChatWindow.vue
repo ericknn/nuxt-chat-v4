@@ -22,7 +22,7 @@ watch(() => props.messages, pinToBottom, { deep: true });
     <UContainer class="chat-container">
       <div v-if="!messages?.length" class="empty-state">
         <div class="empty-state-card">
-          <h2 class="empty-state-title">Start yoUr chat</h2>
+          <h2 class="empty-state-title">Start your chat</h2>
           <ChatInput @send-message="handleSendMessage" />
         </div>
       </div>
@@ -71,6 +71,7 @@ watch(() => props.messages, pinToBottom, { deep: true });
 .scroll-container {
   overflow-y: auto;
   height: 100%;
+  width: 100%;
   box-sizing: border-box;
 }
 
